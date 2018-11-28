@@ -130,16 +130,10 @@ img
 
 #home
 {
-	padding-top: 300px;
+	padding-top: 90px;
 }
 
-iframe
-{
 
-    left: 50%;
-    transform:translateX(-143%);
-    transform:translateY(-72%);
-}
 #about
 {
 	padding: 70px 0;
@@ -172,14 +166,6 @@ iframe
 	margin:0;
 }
 
-.film-background {
-   z-index: -1;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height:100%;
-}
 
 @charset "UTF-8";
 
