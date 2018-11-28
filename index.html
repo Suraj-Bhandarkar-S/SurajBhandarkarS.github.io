@@ -29,46 +29,7 @@
   disableRubberBanding: true
 });
   </script>
-  <script type="text/javascript">
-    function mousehandler(e) {
-        var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
-        if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    function disableCtrlKeyCombination(e) {
-        var forbiddenKeys = new Array("a", "s", "c", "x","u");
-        var key;
-        var isCtrl;
-        if (window.event) {
-            key = window.event.keyCode;
-            //IE
-            if (window.event.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        else {
-            key = e.which;
-            //firefox
-            if (e.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        if (isCtrl) {
-            for (i = 0; i < forbiddenKeys.length; i++) {
-                //case-insensitive comparation
-                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-</script>
+  
 <script>
     new WOW().init();
   </script>
@@ -92,13 +53,18 @@
 					
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#world">Skills</a></li>
+					<li><a href="#Education">Education</a></li>
 					<li><a href="#connect">Connect</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 <div id ="home">
-	<img src="img/desktop1.png" class="banner">
+	<img src="img/desktop1.png"  class="film-background">
+	<center><iframe width="410" height="220" top="100px"
+src="https://www.youtube.com/embed/uPDmj_8OaYo"></iframe></center>
+	
+
 </div>
 
 <div id="about" class="container-fluid text-center">
@@ -112,7 +78,6 @@
 				pursuing my B.E in Computer Science & Engineering at 
 				Canara Engineering College.
 <br><br>
-				"Create a Distraction, we are all gona code :P"
 <br><br>
 				Into Developing Games, Application and Algorithms.
 						
@@ -138,7 +103,7 @@
 		<div class="col-sm-4">
 			<div class="panel panel-default bootcards-media"> 
   <div class="panel-heading">Student Database</div>
-  <div class="panel-body">GUI based Application build designed using Java and back-end as SQL to store, update and delete Student academic information. </div> 
+  <div class="panel-body">GUI based Application build designed using Java and back-end as SQL to store, update and delete Student academic information. The Project Focuses on use of Query and Learning of how Database works. </div> 
   <img src="img/coding1.png"/> 
  <!-- <div class="panel-footer">
   	<a href="#" class="btn btn-primary">Project Link</a>
@@ -152,7 +117,8 @@
 			
 			<div class="panel panel-default bootcards-media"> 
   <div class="panel-heading">3D Robot</div>
-  <div class="panel-body">OpenGl Project with simulation of Robot and its Functionalities. Using C language and OpenGl Library</div> 
+  <div class="panel-body">OpenGl Project with simulation of Robot and its Functionalities. Using C language and OpenGl Library. The Project Focuses on Learning Graphics and object.
+  And how to create GUI and how we develop it.</div> 
   <img src="img/robot1.jpg"/> 
  <!-- <div class="panel-footer">
   	<a href="#" class="btn btn-primary">Project Link</a>
@@ -165,7 +131,7 @@
 			<div class="panel panel-default bootcards-media"> 
   <div class="panel-heading">Space Wars</div>
   <div class="panel-body">2D Android game made using Unity and Photoshop.Coming soon to PlayStore.</div> 
-  <img src="img/Rocket.png"/> 
+  <img src="img/rocket2.png"/> 
   <!--<div class="panel-footer">
   	<a href="#" class="btn btn-primary">Project Link</a>
   </div>-->
@@ -176,6 +142,14 @@
   <div class="panel-heading">XOX Game</div>
   <div class="panel-body">Classic XOX game made using android Studios.</div> 
   <img src="img/XOX.png"/> 
+
+			</div>
+	</div>
+	<div class="col-md-4 hidden-sm">
+				<div class="panel panel-default bootcards-media"> 
+  <div class="panel-heading">Quotes Website</div>
+  <div class="panel-body">Made Using HTML css and PHP. Having a Login, Registration Page and A Database Connectivity for storing the data to display on the website.</div> 
+  <img src="img/Web.jpg"/> 
 
 			</div>
 	</div>
@@ -221,12 +195,39 @@
   <div class="progress-bar" role="progressbar" aria-valuenow="60" style="width: 40%" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 			</div>
+			<div class="col-md-4 hidden-sm">
+				<h3>C#</h3>
+				<div class="progress">
+
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" style="width: 40%" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+			</div>
 	</div>
-	<img  src="img/social.png" class="banner">
-	<footer id="connect" class="container-fluid text-center">
+	<div id="world" class="container-fluid text text-center">
+	</div>
+	<!--<img  src="img/social.png" class="banner">-->
+	<div id="Education" class="container-fluid text text-center">
+	
 		<div class="row">
-			<img src="img/bear.png" width="50%">
+			<h1>Education</h1>
+			
+        <h2>B.E in Computer Science- Canara Engineering College</h2>
+       
+       
+       
+        <h2>12th (PCMC)-Sharada PU College</h2>
+        
+       
+        <h2>SSLC-Canara High School,Urwa</h2>
+        
+      </div>
+      </div>
+
+		<!--<img src="img/bear.png" width="10%">-->
+		<footer id="connect" class="container-fluid text-center">
 			<h1>Connect</h1>
+			<br>
+			<br>
 			<div class="social">
 				<a href="" target="_blank"><i class="fab fa-facebook"></i></a>
 					<a href="" target="_blank"><i class="fab fa-twitter"></i></a>

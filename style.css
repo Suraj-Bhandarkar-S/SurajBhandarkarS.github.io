@@ -130,10 +130,16 @@ img
 
 #home
 {
-	padding-top: 60px;
+	padding-top: 300px;
 }
 
+iframe
+{
 
+    left: 50%;
+    transform:translateX(-143%);
+    transform:translateY(-72%);
+}
 #about
 {
 	padding: 70px 0;
@@ -156,10 +162,23 @@ img
 	padding: 70px 0 50px;
 	background-color: #00b2ca;
 }
-
+#Education
+{
+  padding: :70px 0 50px;
+  background-color: #75AFFB;
+}
 .row
 {
 	margin:0;
+}
+
+.film-background {
+   z-index: -1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height:100%;
 }
 
 @charset "UTF-8";
