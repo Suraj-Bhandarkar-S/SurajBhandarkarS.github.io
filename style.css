@@ -122,7 +122,10 @@ img
 	padding: 3%;
 	font-size: 25px;
 }
-
+.Gallery
+{
+  color: #673ab7; 
+}
 .social a:hover
 {
 	color: #d5d5d5;
@@ -133,7 +136,11 @@ img
 	padding-top: 0px;
 }
 
-
+#gal
+{
+padding-top: 0px;
+background-color: #1fb8eb;
+}
 #about
 {
 	padding: 70px 0;
